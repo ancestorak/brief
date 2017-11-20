@@ -101,6 +101,7 @@ const Brief = {
     },
 
     _updateUI: async function() {
+        Ticker.renderExternal();
 
         let enabled = Prefs.get('showUnreadCounter');
         browser.contextMenus.update('brief-button-show-unread', {checked: enabled});
