@@ -6,7 +6,7 @@
     "manifest_version": 2,
     "applications": {
         "gecko": {
-            "id": "brief@mozdev.org",
+            "id": "brief@jbeekman.nl",
             "strict_min_version": "57.0"
         }
     },
@@ -20,6 +20,7 @@
             "/scripts/prefs.js",
             "/scripts/database.js",
             "/scripts/updater.js",
+            "/scripts/ticker.js",
             "background.js"
         ]
     },
