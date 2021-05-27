@@ -70,7 +70,7 @@ async function init() {
 
     // TODO consider moving iframe init to view init
     let doc = contentIframe.contentDocument;
-    doc.documentElement.setAttribute('lang', navigator.language);
+    doc.documentElement.setAttribute('lang', browser.i18n.getUILanguage());
 
     SplitterModule.init();
     document.getElementById('sidebar-splitter').addEventListener(

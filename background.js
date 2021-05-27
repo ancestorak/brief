@@ -261,7 +261,7 @@ const Brief = {
                 let relativeDate = new this.common.RelativeDate(lastUpdateTime);
 
                 let time, pluralForms, form;
-                let lang = Brief.window.navigator.language;
+                let lang = browser.i18n.getUILanguage();
 
                 switch (true) {
                     case relativeDate.deltaMinutes === 0:
